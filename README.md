@@ -17,12 +17,12 @@
 4. Open, edit and run any of the `java` files provided. Note that some of the files are purely classes intended to be imported by other files and can't be run directly since they lack a `main` entry point.
 
 </br>
-<div align="center"> <p> Example of swing applications </p> </div>
-<img src="S1.png">
-
-</br>
 <div align="center"> <p> Example of java standard library class </p> </div>
 <img src="S2.png">
+
+</br>
+<div align="center"> <p> Example of swing applications </p> </div>
+<img src="S1.png">
 
 ## License
 
