@@ -1,5 +1,6 @@
 
 import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URL;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
@@ -16,9 +17,13 @@ public class DialogViewer {
 		
 		System.out.println("I'm sorry, "+ name + ". I'm afraid I can't do that.");
 		
-		URL imageLocation = new URL("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/White_and_yellow_flower.JPG/320px-White_and_yellow_flower.JPG");
-		
-		JOptionPane.showMessageDialog(null, "Hello!", "Greeting Box", JOptionPane.PLAIN_MESSAGE, new ImageIcon(imageLocation));
+		String ValidLink = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/White_and_yellow_flower.JPG/320px-White_and_yellow_flower.JPG";
+
+		URI imageLocationURI = URI.create(ValidLink);
+
+		URL imageLocationURL = imageLocationURI.toURL();
+
+		JOptionPane.showMessageDialog(null, "Hello!", "Greeting Box", JOptionPane.PLAIN_MESSAGE, new ImageIcon(imageLocationURL));
 		
 		System.exit(0);
 		
