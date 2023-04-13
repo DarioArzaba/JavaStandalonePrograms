@@ -1,4 +1,5 @@
-package contaduria;
+/* Run this using Asiento, Balance y Cuenta to create a balance sheet from a history of operations */
+
 
 public class Accounting {
 

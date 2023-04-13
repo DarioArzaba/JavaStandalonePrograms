@@ -1,4 +1,3 @@
-package contaduria;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package contaduria;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -22,7 +22,7 @@ public class Balance {
 	
 	public void comentario (String mensaje, String fecha) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		this.fechaAsientoActual = fecha;
-		Class<?> nuevaClase = Class.forName("contaduria.Asiento");
+		Class<?> nuevaClase = Class.forName("Asiento");
 		Asiento nuevoAsiento = (Asiento)nuevaClase.newInstance();
 		nuevoAsiento.setMensaje(mensaje);
 		nuevoAsiento.setFecha(fecha);
@@ -65,7 +65,7 @@ public class Balance {
 	
 	public void crearCuenta(String nombreCuenta, String tipoCuenta) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		String nuevaCuentaNombre = nombreCuenta;
-		Class<?> nuevaClase = Class.forName("contaduria.Cuenta");
+		Class<?> nuevaClase = Class.forName("Cuenta");
 		Cuenta nuevaCuenta = (Cuenta)nuevaClase.newInstance();
 		if (tipoCuenta.equals("De Activo")) {
 			nuevaCuenta.setActivo(true);

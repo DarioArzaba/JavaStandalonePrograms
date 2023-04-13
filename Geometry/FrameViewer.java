@@ -6,6 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URI;
 import javax.swing.ImageIcon;
 
 public class FrameViewer {
@@ -25,8 +26,13 @@ public class FrameViewer {
 		label.setOpaque(true);
 		frame.add(label);
 		
-		URL imageLocation = new URL("https://upload.wikimedia.org/wikipedia/commons/b/b4/Michael_Stevens_VidCon_2016.jpg");
-		ImageIcon image = new ImageIcon(imageLocation);
+		String ValidLink = "https://upload.wikimedia.org/wikipedia/commons/b/b4/Michael_Stevens_VidCon_2016.jpg";
+
+		URI imageLocationURI = URI.create(ValidLink);
+
+		URL imageLocationURL = imageLocationURI.toURL();
+
+		ImageIcon image = new ImageIcon(imageLocationURL);
 		JLabel imageComp = new JLabel(image);
 		frame.add(imageComp);
 		

@@ -128,7 +128,8 @@ public class ScannerClass {
 			
 			//Get the current Redix or system number base for the numeric parsing values.
 			System.out.println("7.-  Current Radix (System Number Base):            " + test.radix());
-			
+			test.close();
+
 			Scanner test2 = new Scanner("125 1111101\n125 1111101\n");
 			System.out.println("     New Test Input:                                " + test2.nextLine());
 			

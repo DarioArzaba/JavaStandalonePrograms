@@ -1,7 +1,7 @@
 
 import java.awt.Color;
-import java.io.File;
 import java.net.URL;
+import java.net.URI;
 import java.awt.geom.AffineTransform;
 import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
@@ -60,9 +60,13 @@ public class Picture
       try 
       {
          this.source = source;
+
+		 URI imageLocationURI = URI.create(source);
+		 URL imageLocationURL = imageLocationURI.toURL();
+
          BufferedImage img;
          if (source.startsWith("http://"))
-            img = ImageIO.read(new URL(source).openStream());
+            img = ImageIO.read(imageLocationURL.openStream());
          else
             img = ImageIO.read(getClass().getResource(source));
 
