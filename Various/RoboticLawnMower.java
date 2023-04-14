@@ -538,3 +538,14 @@ public class RoboticLawnMower {
 
 }
 
+class VariousTesting6 {
+	
+	public static void main(String[] args) throws InterruptedException {
+
+		RoboticLawnMower instance = new RoboticLawnMower();
+		int cutGrassNumber = instance.cutGrass(true);
+
+		System.exit(0);
+	
+	}
+}

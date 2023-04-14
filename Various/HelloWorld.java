@@ -20,3 +20,15 @@ public class HelloWorld {
 	}
 	
 }
+
+class VariousTesting9 {
+	
+	public static void main(String[] args) {
+
+		HelloWorld instance = new HelloWorld();
+		instance.printDefaultMessage();
+
+		System.exit(0);
+	
+	}
+}

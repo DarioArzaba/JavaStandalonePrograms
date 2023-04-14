@@ -97,3 +97,14 @@ public class AncientSquareRoot {
 	
 }
 
+class VariousTesting12 {
+	
+	public static void main(String[] args) throws InterruptedException {
+
+		AncientSquareRoot instance = new AncientSquareRoot();
+		instance.printSquareRoot();
+		
+		System.exit(0);
+	
+	}
+}

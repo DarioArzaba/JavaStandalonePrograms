@@ -332,12 +332,9 @@ public class HangmanGameClass {
     	}
     }
 
-    
-    
-    
 }
 
-class VariousTesting {
+class VariousTesting10 {
 	
 	public static void main(String[] args) throws InterruptedException {
 

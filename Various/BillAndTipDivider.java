@@ -76,3 +76,14 @@ public class BillAndTipDivider {
 	
 }
 
+class VariousTesting11 {
+	
+	public static void main(String[] args) {
+
+		BillAndTipDivider instance = new BillAndTipDivider();
+		instance.printBillDivider();
+		
+		System.exit(0);
+	
+	}
+}

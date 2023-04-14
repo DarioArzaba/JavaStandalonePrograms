@@ -136,3 +136,14 @@ public class HouseSurfaceAreaCalculator {
 	
 }
 
+class VariousTesting8 {
+	
+	public static void main(String[] args) {
+
+		HouseSurfaceAreaCalculator instance = new HouseSurfaceAreaCalculator();
+		instance.printHouseSurfaceArea();
+
+		System.exit(0);
+	
+	}
+}

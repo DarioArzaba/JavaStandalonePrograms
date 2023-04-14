@@ -95,4 +95,14 @@ public class SearchBestItem {
 	
 }
 
+class VariousTesting3 {
+	
+	public static void main(String[] args) {
 
+		SearchBestItem instance = new SearchBestItem();
+		instance.printBestItems();;
+		
+		System.exit(0);
+	
+	}
+}

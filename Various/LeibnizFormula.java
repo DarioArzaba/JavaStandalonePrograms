@@ -66,3 +66,14 @@ public class LeibnizFormula {
 	
 }
 
+class VariousTesting7 {
+	
+	public static void main(String[] args) {
+
+		LeibnizFormula instance = new LeibnizFormula(50);
+		instance.printPiResult();
+
+		System.exit(0);
+	
+	}
+}

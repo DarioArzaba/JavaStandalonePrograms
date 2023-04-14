@@ -123,3 +123,14 @@ public class ScreenSizeCalculator {
 	
 }
 
+class VariousTesting4 {
+	
+	public static void main(String[] args) {
+
+		ScreenSizeCalculator instance = new ScreenSizeCalculator();
+		instance.printAll();
+		
+		System.exit(0);
+	
+	}
+}

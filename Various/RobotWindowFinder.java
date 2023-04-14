@@ -710,3 +710,15 @@ public class RobotWindowFinder {
 	}
 	
 }
+
+class VariousTesting5 {
+	
+	public static void main(String[] args) throws InterruptedException {
+
+		RobotWindowFinder instance = new RobotWindowFinder();
+		int numberRooms = instance.countWindows(true);
+
+		System.exit(0);
+	
+	}
+}

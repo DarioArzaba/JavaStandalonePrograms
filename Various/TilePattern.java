@@ -1,4 +1,4 @@
-package various_programs;
+package Various;
 
 /**
  Black and white tile pattern creator.
@@ -199,4 +199,16 @@ public class TilePattern {
 		return whiteMatrix;
 	}
 	
+}
+
+class VariousTesting {
+	
+	public static void main(String[] args) {
+
+		TilePattern instance = new TilePattern(6,8);
+		instance.printMatrix(instance.createMatrix());;
+		
+		System.exit(0);
+	
+	}
 }
